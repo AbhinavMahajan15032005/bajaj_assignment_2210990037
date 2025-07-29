@@ -39,7 +39,7 @@ const BIRTH_DATE = process.env.BIRTH_DATE || "15032005";
 const EMAIL_ID = process.env.EMAIL_ID || "abhinav37.be22@chitkara.edu.in";
 const ROLL_NO = process.env.ROLL_NO || "2210990037";
 
-app.post("https://testbfhl.herokuapp.com/bfhl", (req, res) => {
+app.post("/bfhl", (req, res) => {
   try {
     const { data } = req.body;
 
